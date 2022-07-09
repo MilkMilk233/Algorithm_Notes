@@ -8,6 +8,19 @@ Let's learn C++ STL by concrete examples!
 
 ## Vector
 
+### Initialization
+
+```c++
+int main(){
+	vector<int> vecl;	// Empty
+    vector<float> vec2(3);	//	[0,0,0]
+    vector<char> vec3(3,'a');  //	['a', 'a', 'a']
+    vector<char> vec4(vec3);  //	['a', 'a', 'a'], copy from vec3, same elements.
+}
+```
+
+
+
 ### resize()
 
 ```c++
@@ -25,6 +38,12 @@ sums =
  [0,0,0]]
  
 ```
+
+
+
+### Comparison
+
+当vector里的元素是基本数据类型时，可以直接使用 "=="， "!="， ">="，"<=" 来对两个vector进行比较。
 
 
 
